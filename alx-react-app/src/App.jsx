@@ -10,7 +10,9 @@ import Footer from './components/Footer'
 function App() {
   return (
     <>
-      <WelcomeMessage />
+      <MainContent />
+      <Header />
+      <Footer />
     </>
   )
 }
