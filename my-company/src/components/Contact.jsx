@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 
    function Contact() {
@@ -18,7 +19,7 @@ import { useState } from 'react';
 
      return (
        <div style={{ padding: '20px' }}>
-         <h1>Contact Us</h1>
+         <h1 style={{borderBottom:'5px solid navy'}}>Contact Us</h1>
          <form onSubmit={handleSubmit}>
            <input
              type="text"
@@ -26,7 +27,7 @@ import { useState } from 'react';
              placeholder="Your Name"
              value={formData.name}
              onChange={handleChange}
-             style={{ display: 'block', margin: '10px 0' }}
+             style={{ display: 'block', margin: '10px 0' ,backgroundColor:'#F5F5F5',border:'1px solid gray', borderRadius:'4px', padding:'5px'}}
            />
            <input
              type="email"
@@ -34,7 +35,7 @@ import { useState } from 'react';
              placeholder="Your Email"
              value={formData.email}
              onChange={handleChange}
-             style={{ display: 'block', margin: '10px 0' }}
+             style={{ display: 'block', margin: '10px 0' ,backgroundColor:'#F5F5F5',border:'1px solid gray', borderRadius:'4px', padding:'5px'}}
            />
            <textarea
              name="message"
@@ -43,7 +44,7 @@ import { useState } from 'react';
              onChange={handleChange}
              style={{ display: 'block', margin: '10px 0' }}
            />
-           <button type="submit">Send Message</button>
+           <button type="submit" style={{backgroundColor:'#FFF8E7', border:'1px solid gray', borderRadius:'3px', padding:'5px'}}>Send Message</button>
          </form>
        </div>
      );
