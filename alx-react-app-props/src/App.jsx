@@ -7,7 +7,7 @@ import Header from './components/Header'
 import MainContent from './components/MainContent'
 import Footer from './components/Footer'
 import UserProfile from './components/ProfilePage/ProfilePage'
-import  UserContext  from './components/UserContext/UserContext'
+import  UserContext  from './components/UserContext'
 
 
 function App() {
