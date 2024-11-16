@@ -9,7 +9,8 @@ function DeleteRecipeButton(recipeId) {
     
   return (
     <button 
-          style={{marginLeft:'40px'}} 
+          style={{marginLeft:'262px', marginTop:'30px'}} 
+          
           onClick={()=> deleteRecipe(recipeId.recipeId)}
           >
         Delete Recipe

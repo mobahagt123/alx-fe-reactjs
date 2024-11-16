@@ -13,7 +13,7 @@ const useRecipeStore = create(persist((set)=> ({
     {
     name: 'recipe-storage', // unique name
     getStorage: () => localStorage, // default is localStorage can be a sessionStorage too
-    }
+   }
      )
  
 

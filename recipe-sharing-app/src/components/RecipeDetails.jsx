@@ -17,8 +17,8 @@ function RecipeDetails() {
        {!recipe ? <h1>The recipe has been deleted</h1> :<div>
           <h1>{recipe.title}</h1>
           <p>{recipe.description}</p>
-          <div style={{display:'flex',margin:'20px',textAlign:'center'}}>
-            <EditRecipeForm />
+          <div>
+            <EditRecipeForm  recipeId={recipe.id}/>
             <DeleteRecipeButton recipeId={recipe.id} />
           </div>
     </div>}
