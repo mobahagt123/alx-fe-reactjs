@@ -3,7 +3,7 @@ import {Outlet, Route} from 'react-router-dom'
 import { createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import RecipeDetails from './components/RecipeDetails'
 import Root from './components/Root'
-
+import AddRecipeForm from './components/AddRecipeForm'
 
 
 
@@ -16,12 +16,11 @@ export const router = createBrowserRouter(
     </Route>
   )
 )
-
-
 function App() {
 
   return (
     <>
+     <AddRecipeForm />
      <Outlet />  
     </>
   )
