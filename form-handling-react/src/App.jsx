@@ -1,5 +1,5 @@
 import './App.css'
-import ResistrationForm from './components/ResistrationForm'
+import RegistrationForm from './components/RegistrationForm'
 
 
 
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <ResistrationForm />
+      <RegistrationForm />
      
       
     </>

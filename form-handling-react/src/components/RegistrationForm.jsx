@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 
 
-function ResistrationForm() {
+function RegistrationForm() {
 
     const [formData, setFormData] = useState({
         username:'',
@@ -66,4 +66,4 @@ function ResistrationForm() {
   )
 }
 
-export default ResistrationForm
+export default RegistrationForm;
