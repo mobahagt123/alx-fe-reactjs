@@ -43,14 +43,14 @@ function RegistrationForm() {
         <input
               type='text'
               name='username'
-              value={formData.username}
+              value={username}
               onChange={handleChange}
         />
         <label htmlFor='email'>Email</label>
         <input 
               type='email'
               name='email'
-              value={formData.email}
+              value={email}
               onChange={handleChange}
         />
         
@@ -58,7 +58,7 @@ function RegistrationForm() {
         <input 
               type='password'
               name='password'
-              value={formData.password}
+              value={password}
               onChange={handleChange}
         />
         <button onSubmit={handleSubmit}>Submit</button>
