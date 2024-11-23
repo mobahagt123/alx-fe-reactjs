@@ -19,21 +19,23 @@ function RegistrationForm() {
     
     //Validate email
 
-  
-    if(!username){
-        errors.username = 'Username is required'
-    }
+    const checkValidation = ()=> {
+        let validation = errors
 
-    if(!email){
-        errors.email = 'Email is required'
-    }
+        if (!username){
+            validation.username = 'Username is required'
+        }
 
-    if(!password){
-        errors.password = 'Password is required'
-    }
-    
-    setErrors(validation)
+        if (!email){
+            validation.email = 'Email is required'
+        }
 
+        if (!password) {
+            validation.password = 'Password is required'
+        }
+        setErrors(validation)
+
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault()  
