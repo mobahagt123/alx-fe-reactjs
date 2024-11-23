@@ -21,7 +21,7 @@ function RegistrationForm() {
 
     const checkValidation = ()=> {
         let validation = errors
-        
+
         if(!username){
             validation.username = 'Username is required'
         }
@@ -39,7 +39,7 @@ function RegistrationForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault()  
-        console.log(formData) 
+        checkValidation()
         console.log(errors)
     }
 
