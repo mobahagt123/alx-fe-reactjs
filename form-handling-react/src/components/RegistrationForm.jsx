@@ -9,27 +9,38 @@ function RegistrationForm() {
         username:'',
         email:'',
         password:''})
+
+    const [errors , setErrors] = useState({
+        username:'',
+        email:'',
+        password:''})
+
+    const {username , email ,password} = formData
     
-    //Validate form inputs
-    const ValidateForm = ()=> {
-        let FormErrors = []
-        Object.keys(formData).forEach(key => {
-            if (formData[key]===''){
-                FormErrors.push({[key]:'is required'})
-            }
-        })
-        return FormErrors
+    //Validate email
+
+    const checkValidation = ()=> {
+        let validation = errors
+        
+        if(!username){
+            validation.username = 'Username is required'
+        }
+
+        if(!email){
+            validation.email = 'Email is required'
+        }
+
+        if(!password){
+            validation.password = 'Password is required'
+        }
+        setErrors(validation)
+
     }
 
-    const errors = ValidateForm()
-    
     const handleSubmit = (e) => {
-        e.preventDefault()
-        if(errors){
-            errors.forEach(error => {
-                console.log(`${Object.keys(error)} ${Object.values(error)}`)
-            })
-        }
+        e.preventDefault()  
+        console.log(formData) 
+        console.log(errors)
     }
 
     const handleChange = (e)=> {
