@@ -15,7 +15,7 @@ function HomePage() {
     <> 
       <div>
         <h2 className='text-xl font-bold uppercase font-mono mb-10'>Recipe Sharing App</h2>
-        <div className='lg:grid lg:grid-cols-3'>
+        <div className='lg:grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
             {recipes.map((recipe)=> (
            <div key={recipe.id}>
              <div className='bg-teal-400 h-96 md:h-80 max-[780px]:h-80 m-3 mb-10 rounded-md overflow-auto shadow-slate-300 shadow-md hover:shadow-lg hover:shadow-slate-300'>
