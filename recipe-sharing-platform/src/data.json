@@ -2,20 +2,66 @@
   {
     "id": 1,
     "title": "Spaghetti Carbonara",
-    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://www.allrecipes.com/thmb/zJzTLhtUWknHXVoFIzysljJ9wR8=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/11973-spaghetti-carbonara-ii-DDMFS-4x3-6edea51e421e4457ac0c3269f3be5157.jpg"
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper. This spaghetti carbonara recipe comes from an Italian, unlike a lot of recipes out there for spaghetti carbonara. It's very true to what you'd find in Italy. Top with extra Pecorino-Romano cheese, salt, and pepper. Note, there's no cream, just eggs, and Pecorino Romano cheese is used, not Parmesan.",
+    "image": "https://www.allrecipes.com/thmb/zJzTLhtUWknHXVoFIzysljJ9wR8=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/11973-spaghetti-carbonara-ii-DDMFS-4x3-6edea51e421e4457ac0c3269f3be5157.jpg",
+    "ingredients": ["1 tablespoon extra virgin olive oil or unsalted butter",
+                    "1/2 pound pancetta or thick cut bacon, diced",
+                    "1 to 2 garlic cloves, minced, about 1 teaspoon (optional)",
+                    "3 to 4 whole eggs",
+                    "1 cup grated Parmesan or pecorino cheese",
+                    "1 pound spaghetti (or bucatini or fettuccine)",
+                    "Kosher salt and freshly ground black pepper to taste"
+                  ],
+    "instructions": ["Put a large pot of salted water on to boil (1 tablespoon salt for every 2 quarts of water.)",
+                     "While the water is coming to a boil, heat the olive oil or butter in a large sauté pan over medium heat. Add the bacon or pancetta and cook slowly until crispy.",
+                     "In a small bowl, beat the eggs and mix in about half of the cheese.",
+                     "Once the water has reached a rolling boil, add the dry pasta, and cook, uncovered, at a rolling boil.",
+                    "Move the pasta from the pot to the bowl quickly, as you want the pasta to be hot. It's the heat of the pasta that will heat the eggs sufficiently to create a creamy sauce.",
+                    "Add the beaten eggs with cheese and toss quickly to combine once more. Add salt to taste. Add some pasta water back to the pasta to keep it from drying out."]
+
   },
+
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2023%2F01%2F31%2F239867chef-johns-chicken-tikka-masala-ddmfs-3X4-0572.jpg&q=60&c=sc&poi=auto&orient=true&h=512"
+    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2023%2F01%2F31%2F239867chef-johns-chicken-tikka-masala-ddmfs-3X4-0572.jpg&q=60&c=sc&poi=auto&orient=true&h=512",
+     "ingredients": ["1 tablespoon extra virgin olive oil or unsalted butter",
+                    "1/2 pound pancetta or thick cut bacon, diced",
+                    "1 to 2 garlic cloves, minced, about 1 teaspoon (optional)",
+                    "3 to 4 whole eggs",
+                    "1 cup grated Parmesan or pecorino cheese",
+                    "1 pound spaghetti (or bucatini or fettuccine)",
+                    "Kosher salt and freshly ground black pepper to taste"
+                  ],
+    "instructions": ["Put a large pot of salted water on to boil (1 tablespoon salt for every 2 quarts of water.)",
+                     "While the water is coming to a boil, heat the olive oil or butter in a large sauté pan over medium heat. Add the bacon or pancetta and cook slowly until crispy.",
+                     "In a small bowl, beat the eggs and mix in about half of the cheese.",
+                     "Once the water has reached a rolling boil, add the dry pasta, and cook, uncovered, at a rolling boil.",
+                    "Move the pasta from the pot to the bowl quickly, as you want the pasta to be hot. It's the heat of the pasta that will heat the eggs sufficiently to create a creamy sauce.",
+                    "Add the beaten eggs with cheese and toss quickly to combine once more. Add salt to taste. Add some pasta water back to the pasta to keep it from drying out."]
+
   },
   
   {
-    "id": 2,
+    "id": 3,
     "title": "The Best Stuffed Peppers",
     "summary": "This is a great recipe to use up leftover rice. Be sure to really pile in the filling (mounding it is ok) as it will shrink as it cooks.",
-    "image": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/9/3/0/FNK_the-best-stuffed-peppers_H_s4x3.jpg.rend.hgtvcom.791.594.suffix/1567523590914.jpeg"
+    "image": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/9/3/0/FNK_the-best-stuffed-peppers_H_s4x3.jpg.rend.hgtvcom.791.594.suffix/1567523590914.jpeg",
+     "ingredients": ["1 tablespoon extra virgin olive oil or unsalted butter",
+                    "1/2 pound pancetta or thick cut bacon, diced",
+                    "1 to 2 garlic cloves, minced, about 1 teaspoon (optional)",
+                    "3 to 4 whole eggs",
+                    "1 cup grated Parmesan or pecorino cheese",
+                    "1 pound spaghetti (or bucatini or fettuccine)",
+                    "Kosher salt and freshly ground black pepper to taste"
+                  ],
+    "instructions": ["Put a large pot of salted water on to boil (1 tablespoon salt for every 2 quarts of water.)",
+                     "While the water is coming to a boil, heat the olive oil or butter in a large sauté pan over medium heat. Add the bacon or pancetta and cook slowly until crispy.",
+                     "In a small bowl, beat the eggs and mix in about half of the cheese.",
+                     "Once the water has reached a rolling boil, add the dry pasta, and cook, uncovered, at a rolling boil.",
+                    "Move the pasta from the pot to the bowl quickly, as you want the pasta to be hot. It's the heat of the pasta that will heat the eggs sufficiently to create a creamy sauce.",
+                    "Add the beaten eggs with cheese and toss quickly to combine once more. Add salt to taste. Add some pasta water back to the pasta to keep it from drying out."]
+
   }
 ]
