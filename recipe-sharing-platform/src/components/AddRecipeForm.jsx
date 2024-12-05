@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { isFileServingAllowed } from 'vite'
 
 
 
@@ -12,7 +13,22 @@ function AddRecipeForm() {
     const [ingredients ,setIngredients] = useState([])
     const [instructions ,setInstructions] = useState([])
 
+    const [errors, setErrors] = useState([])
+
     const recipes = JSON.parse(localStorage.getItem('recipesData'))
+
+    const checkValidation = ()=>{
+        let validation = []
+
+        if(!title){
+            validation.push('title is required')
+        }
+        
+        setErrors(validation)
+
+        return validation
+    }
+    
 
     const handleSubmit = (e)=> {
         e.preventDefault()
@@ -24,13 +40,13 @@ function AddRecipeForm() {
             ingredients: [ingredients],
             instructions: [instructions]
         })
-
-        localStorage.setItem('recipesData',JSON.stringify(recipes))
+        
+        if(!checkValidation()){
+            localStorage.setItem('recipesData',JSON.stringify(recipes))
+        }
+        
     }
     
-    localStorage.setItem('recipesData',JSON.stringify(recipes))
-    
-
   return (
     <div>
         <form className='border-1 p-5 bg-teal-400 rounded-lg shadow-md' onSubmit={handleSubmit}>
@@ -101,6 +117,16 @@ function AddRecipeForm() {
                                 value={instructions}
                                 onChange={(event)=> setInstructions(event.target.value)}
                                 />
+                </div>
+                      {/* Errors block */}
+
+                      {errors && errors.map((error)=>{
+                        <ul>
+                            <li>error</li>
+                        </ul>
+                      })}
+                <div>
+
                 </div>
 
                 <div className='flex justify-center'>
