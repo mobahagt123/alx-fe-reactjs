@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import recipesData from '../data.json'
-import { useParams } from 'react-router-dom'
+
+import { Link, useParams } from 'react-router-dom'
  
 
 function RecipeDetail() {
@@ -11,7 +11,8 @@ function RecipeDetail() {
     const [instructions, setInstructions] = useState('')
   
     const recipeId = useParams()
-
+    
+    const recipesData =  JSON.parse(localStorage.getItem('recipesData'))
   
     useEffect(()=> {
        const currentRecipe = recipesData.filter( (recipe) => recipe.id == recipeId.recipeid)[0]

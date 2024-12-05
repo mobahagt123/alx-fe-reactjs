@@ -3,13 +3,20 @@ import { useState, useEffect } from 'react'
 import recipesData from '../data.json'
 import { Link } from 'react-router-dom'
 
+
+
 function HomePage() {
     
     const [recipes , setRecipes] = useState([])
 
+    const localRecipes = JSON.parse(localStorage.getItem('recipesData'))
+
     useEffect(()=> {
-        setRecipes(recipesData)
+        
+        setRecipes(localRecipes)
     },[])
+
+    console.log(recipes)
     
   return (
 
@@ -31,6 +38,12 @@ function HomePage() {
             </div>
           
       ))}
+        </div>
+           
+        <div>
+          <Link to={'/addrecipe'}>
+            <button className='bg-teal-400 p-2 rounded-lg text-gray-950 shadow-lg cursor-pointer hover:shadow-md hover:shadow-gray-500'>Add Recipe</button>
+          </Link>
         </div>
      </div>
       
