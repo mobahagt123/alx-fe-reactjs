@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import recipesData from '../data.json'
 
 import { Link, useParams } from 'react-router-dom'
  
