@@ -17,7 +17,7 @@ function AddRecipeForm() {
 
     const recipes = JSON.parse(localStorage.getItem('recipesData'))
 
-    const checkValidation = ()=>{
+    const validate = ()=>{
         let validation = []
 
         if(!title){
@@ -40,8 +40,8 @@ function AddRecipeForm() {
             ingredients: [ingredients],
             instructions: [instructions]
         })
-        
-        if(!checkValidation()){
+
+        if(!validate()){
             localStorage.setItem('recipesData',JSON.stringify(recipes))
         }
         
@@ -122,7 +122,7 @@ function AddRecipeForm() {
 
                       {errors && errors.map((error)=>{
                         <ul>
-                            <li>error</li>
+                            <li>{error}</li>
                         </ul>
                       })}
                 <div>
