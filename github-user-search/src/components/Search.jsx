@@ -44,6 +44,7 @@ function Search() {
                                 <img src={data.avatar_url} />
                                 <span>{data.name}</span>
                                 <span>{data.bio}</span>
+                                <span>{data.login}</span>
                            </div> 
                 : <div>Loading...</div>}
             </div>}
