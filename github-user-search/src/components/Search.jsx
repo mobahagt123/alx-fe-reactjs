@@ -77,6 +77,7 @@ function Search() {
     reposNumCards.current.className = 'block'
    }
   
+  
         
   return (
     <div>
@@ -127,7 +128,7 @@ function Search() {
 
         <div> 
                {/* username card  */}
-            {error ? <div>Data Not Found</div> : 
+            {error ? <div className='font-poppins  text-center text-white bg-red-500 mx-60 my-10 p-3 rounded-lg'>Data Not Found</div> : 
             <div className='hidden' ref={nameCardRef}>
                 {loading ? <div className= 'flex bg-gray-100 font-poppins m-10 h-60 p-5 items-center rounded-xl'>
                             <img className='w-44 rounded-full' src={data.avatar_url} />
@@ -142,7 +143,8 @@ function Search() {
             
             {/* users location cards */}
             <div >
-                {error ? <div>Data Not Found</div> : 
+                {dataByLocation.total_count === 0 && <div className='font-poppins  text-center text-white bg-red-500 mx-60 my-10 p-3 rounded-lg'>Data not found</div>}
+                {error ? <div className='hidden'>Data Not Found</div> : 
                 <div className='hidden' ref={locationCards}>
                     
                   {dataByLocation && Array.from(dataByLocation.items).slice(1,10).map((item)=> (
@@ -167,7 +169,8 @@ function Search() {
 
             {/* users repos number cards */}
             <div >
-                {error ? <div>Data Not Found</div> : 
+                {dataByReposNum.total_count === 0 && <div className='font-poppins  text-center text-white bg-red-500 mx-60 my-10 p-3 rounded-lg'>Data not found</div>}
+                {error ? <div className='hidden'>Data Not Found</div> : 
                 <div className='hidden' ref={reposNumCards}>
                     
                   {dataByReposNum && Array.from(dataByReposNum.items).slice(1,10).map((item)=> (
