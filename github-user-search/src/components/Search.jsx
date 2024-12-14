@@ -128,7 +128,7 @@ function Search() {
 
         <div> 
                {/* username card  */}
-            {error ? <div className='font-poppins  text-center text-white bg-red-500 mx-60 my-10 p-3 rounded-lg'>Data Not Found</div> : 
+            {error ? <div className='font-poppins  text-center text-white bg-red-500 mx-60 my-10 p-3 rounded-lg'>Looks like we cant find the user</div> : 
             <div className='hidden' ref={nameCardRef}>
                 {loading ? <div className= 'flex bg-gray-100 font-poppins m-10 h-60 p-5 items-center rounded-xl'>
                             <img className='w-44 rounded-full' src={data.avatar_url} />
