@@ -24,9 +24,9 @@ export const fetchUserLocation = (location)=> {
     )
 }
 
-export const fetchReposData = (reposNumber)=> {
+export const fetchReposData = (minRepos)=> {
     return (
-        axios.get(`https://api.github.com/search/users?q=repos:${reposNumber}` , {
+        axios.get(`https://api.github.com/search/users?q=repos:${minRepos}` , {
              headers: {
             Authorization:  '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' ,
              }
